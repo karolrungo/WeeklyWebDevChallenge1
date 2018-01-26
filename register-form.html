@@ -1,0 +1,25 @@
+
+<section>
+  <h1 class="formHeader">Register form</h1>
+  <div class="form-wrapper">
+    <form>
+      <input type="text" placeholder="Username" required="required"/>
+      <input type="password" placeholder="Password" required="required"/>
+      <input type="password" placeholder="Confirm password" required="required"/>
+      <input type="email" placeholder="Email" required="required"/>
+      <input list="location" placeholder="Your location" required="required"/>
+      <datalist id="location">
+        <option value="Poland"></option>
+        <option value="USA"></option>
+        <option value="Germany"></option>
+        <option value="Spain"></option>
+        <option value="Russia"></option>
+      </datalist>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="terms" required="required"/>
+        <label for="terms">I have read and accept the terms of use</label>
+      </div>
+      <input type="submit" value="Sign up"/>
+    </form>
+  </div>
+</section>

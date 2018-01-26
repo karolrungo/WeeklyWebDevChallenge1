@@ -17,7 +17,8 @@ body {
       filter: opacity(0.45); }
   .container .columns {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap; }
     .container .columns .col .formHeader {
       margin: 25px auto;
       text-align: center;
@@ -27,13 +28,63 @@ body {
     .container .columns .col .form-wrapper {
       width: 420px;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.23); }
+      background-color: rgba(0, 0, 0, 0.23);
+      border-radius: 5px; }
       .container .columns .col .form-wrapper form {
         padding: 20px;
         background-color: #f4f4f4;
         display: flex;
         flex-direction: column; }
+        .container .columns .col .form-wrapper form label {
+          color: #afafaf;
+          font-size: 16px; }
         .container .columns .col .form-wrapper form input {
-          margin: 20px; }
+          margin-top: 20px;
+          padding: 10px 0px 10px 70px;
+          font-size: 16px;
+          font-family: 'Titillium Web', sans-serif;
+          color: #afafaf;
+          border: 1px solid #afafaf;
+          outline: none; }
+          .container .columns .col .form-wrapper form input::placeholder {
+            color: inherit; }
+        .container .columns .col .form-wrapper form input[type="text"] {
+          background: url("../img/icon-person.png") no-repeat 7px; }
+        .container .columns .col .form-wrapper form input[type="password"] {
+          background: url("../img/icon-password.png") no-repeat 7px; }
+        .container .columns .col .form-wrapper form input[type="email"] {
+          background: url("../img/icon-email.png") no-repeat 7px; }
+        .container .columns .col .form-wrapper form input[list] {
+          background: url("../img/icon-location.png") no-repeat 7px; }
+        .container .columns .col .form-wrapper form input[type="checkbox"] {
+          -webkit-appearance: none;
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          padding: 0;
+          border-radius: 2px;
+          position: relative; }
+          .container .columns .col .form-wrapper form input[type="checkbox"]:after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 3px;
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            background-color: #a1d63e;
+            visibility: hidden; }
+          .container .columns .col .form-wrapper form input[type="checkbox"]:checked:after {
+            visibility: visible; }
+        .container .columns .col .form-wrapper form input[type=submit] {
+          padding-left: 0px;
+          padding-right: 0px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          text-align: center;
+          background-color: #a1d63e;
+          border-radius: 5px;
+          color: #fff;
+          border: none; }
 
 /*# sourceMappingURL=style.css.map */

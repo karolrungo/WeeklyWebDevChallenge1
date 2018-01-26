@@ -2,10 +2,18 @@ section
   h1.formHeader Register form
   .form-wrapper
     form
-        input(type="text")
-        input(type="password")
-        input(type="email")
-        input(type="email")
-        input(type="list")
-        input(type="checkbox")
-        input(type="submit")
+        input(type="text" placeholder="Username" required)
+        input(type="password" placeholder="Password" required)
+        input(type="password" placeholder="Confirm password" required)
+        input(type="email" placeholder="Email" required)
+        input(list="location" placeholder="Your location" required)
+        datalist#location
+          option(value="Poland")
+          option(value="USA")
+          option(value="Germany")
+          option(value="Spain")
+          option(value="Russia")
+        .checkbox-wrapper
+          input(type="checkbox" id="terms" required)
+          label(for="terms") I have read and accept the terms of use
+        input(type="submit" value="Sign up")

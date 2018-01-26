@@ -6,6 +6,8 @@
     <meta name="description" content="WeeklyWebDev1">
     <meta name="author" content="Karol Rungo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -17,13 +19,23 @@
             <h1 class="formHeader">Register form</h1>
             <div class="form-wrapper">
               <form>
-                <input type="text">
-                <input type="password">
-                <input type="email">
-                <input type="email">
-                <input type="list">
-                <input type="checkbox">
-                <input type="submit">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm password" required>
+                <input type="email" placeholder="Email" required>
+                <input list="location" placeholder="Your location" required>
+                <datalist id="location">
+                  <option value="Poland"></option>
+                  <option value="USA"></option>
+                  <option value="Germany"></option>
+                  <option value="Spain"></option>
+                  <option value="Russia"></option>
+                </datalist>
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="terms" required>
+                  <label for="terms">I have read and accept the terms of use</label>
+                </div>
+                <input type="submit" value="Sign up">
               </form>
             </div>
           </section>
@@ -42,7 +54,32 @@
             </div>
           </section>
         </div>
-        <div class="col"></div>
+        <div class="col">
+          <section>
+            <h1 class="formHeader">Register form</h1>
+            <div class="form-wrapper">
+              <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm password" required>
+                <input type="email" placeholder="Email" required>
+                <input list="location" placeholder="Your location" required>
+                <datalist id="location">
+                  <option value="Poland"></option>
+                  <option value="USA"></option>
+                  <option value="Germany"></option>
+                  <option value="Spain"></option>
+                  <option value="Russia"></option>
+                </datalist>
+                <div class="checkbox-wrapper">
+                  <input type="checkbox" id="terms" required>
+                  <label for="terms">I have read and accept the terms of use</label>
+                </div>
+                <input type="submit" value="Sign up">
+              </form>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
     <script src="js/scripts.js"></script>
