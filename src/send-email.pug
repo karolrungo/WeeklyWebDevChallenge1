@@ -1,11 +1,11 @@
 section
-  h1.formHeader Register form
+  h1.formHeader Send email
   .form-wrapper
     form
-        input(type="text")
-        input(type="password")
-        input(type="email")
-        input(type="email")
-        input(type="list")
-        input(type="checkbox")
-        input(type="submit")
+        input(type="text" placeholder='Your name' required)
+        input(type="email" placeholder='Your email' required)
+        textarea(placeholder='Type your message...' required)
+        .checkbox-wrapper
+          input(type="checkbox" id="terms" required)
+          label(for="terms") Send  copy to my Email
+        input(type="submit" value="Send email")

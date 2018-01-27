@@ -1,15 +1,16 @@
 
 <section>
-  <h1 class="formHeader">Register form</h1>
+  <h1 class="formHeader">Send email</h1>
   <div class="form-wrapper">
     <form>
-      <input type="text"/>
-      <input type="password"/>
-      <input type="email"/>
-      <input type="email"/>
-      <input type="list"/>
-      <input type="checkbox"/>
-      <input type="submit"/>
+      <input type="text" placeholder="Your name" required="required"/>
+      <input type="email" placeholder="Your email" required="required"/>
+      <textarea placeholder="Type your message..." required="required"></textarea>
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="terms" required="required"/>
+        <label for="terms">Send  copy to my Email</label>
+      </div>
+      <input type="submit" value="Send email"/>
     </form>
   </div>
 </section>
