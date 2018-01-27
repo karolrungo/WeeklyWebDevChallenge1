@@ -56,17 +56,18 @@ body{
             font-size: 16px;
           }
 
-          input{
+          input, textarea{
+            background-color: #f4f4f4;
             margin-top: 20px;
             padding: 10px 0px 10px 70px;
             font-size: 16px;
             font-family: 'Titillium Web', sans-serif;
-            color: #afafaf;
+            color: black;
             border: 1px solid #afafaf;
             outline: none;
 
             &::placeholder{
-              color: inherit;
+              color: #afafaf;
             }
           }
           input[type="text"]
@@ -125,6 +126,15 @@ body{
             border-radius: 5px;
             color: #fff;
             border: none;
+          }
+
+          textarea
+          {
+            margin-top: 20px;
+            padding-left: 7px;
+            resize: none;
+            width: 100%;
+            height: 15em;
           }
         }
     }
