@@ -12,122 +12,121 @@ body{
 
 .container{
   margin-top: 55px;
+}
 
-  header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    img{
-      filter: opacity(0.45);
-    }
+  img{
+    filter: opacity(0.45);
   }
+}
 
-  .columns{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.columns{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-    .col{
+.formHeader {
+  margin: 25px auto;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  text-shadow: 1px 2px 2px #000;
+}
 
-      .formHeader {
-        margin: 25px auto;
-        text-align: center;
-        color: white;
-        font-size: 32px;
-        text-shadow: 1px 2px 2px #000;
+.form-wrapper{
+  width: 420px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
 
-      }
-      .form-wrapper{
-        width: 420px;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.23);
-        border-radius: 5px;
+  form{
+    padding: 20px;
+    background-color: #f4f4f4;
 
-        form{
-          padding: 20px;
-          background-color: #f4f4f4;
+    display:flex;
+    flex-direction: column;
 
-          display:flex;
-          flex-direction: column;
-
-          label{
-            color: #afafaf;
-            font-size: 16px;
-          }
-
-          input{
-            margin-top: 20px;
-            padding: 10px 0px 10px 70px;
-            font-size: 16px;
-            font-family: 'Titillium Web', sans-serif;
-            color: #afafaf;
-            border: 1px solid #afafaf;
-            outline: none;
-
-            &::placeholder{
-              color: inherit;
-            }
-          }
-          input[type="text"]
-          {
-            background: url('../img/icon-person.png') no-repeat  7px ;
-          }
-
-          input[type="password"]
-          {
-            background: url('../img/icon-password.png') no-repeat  7px ;
-          }
-
-          input[type="email"]
-          {
-            background: url('../img/icon-email.png') no-repeat  7px ;
-          }
-
-          input[list]{
-            background: url('../img/icon-location.png') no-repeat 7px;
-          }
-
-          input[type="checkbox"]
-          {
-            -webkit-appearance: none;
-            display: inline-block;
-            height: 20px;
-            width: 20px;
-            padding: 0;
-            border-radius: 2px;
-            position: relative;
-
-            &:after{
-              position: absolute;
-              content: '';
-              top: 3px;
-              left: 3px;
-              width: 12px;
-              height: 12px;
-              border-radius: 2px;
-              background-color: #a1d63e;
-              visibility: hidden;
-            }
-
-            &:checked:after{
-              visibility:visible;
-            }
-          }
-
-          input[type=submit]{
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-            background-color: #a1d63e;
-            border-radius: 5px;
-            color: #fff;
-            border: none;
-          }
-        }
+    label{
+      color: #afafaf;
+      font-size: 16px;
     }
+
+    input{
+      margin-top: 20px;
+      padding: 10px 0px 10px 70px;
+      font-size: 16px;
+      font-family: 'Titillium Web', sans-serif;
+      color: #afafaf;
+      border: 1px solid #afafaf;
+      outline: none;
+
+      &::placeholder{
+        color: inherit;
+      }
+    }
+    input[type="text"]
+    {
+      background: url('../img/icon-person.png') no-repeat  7px ;
+    }
+
+    input[type="password"]
+    {
+      background: url('../img/icon-password.png') no-repeat  7px ;
+    }
+
+    input[type="email"]
+    {
+      background: url('../img/icon-email.png') no-repeat  7px ;
+    }
+
+    input[list]{
+      background: url('../img/icon-location.png') no-repeat 7px;
+    }
+
+    input[type="checkbox"]
+    {
+      -webkit-appearance: none;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      padding: 0;
+      border-radius: 2px;
+      position: relative;
+
+      &:after{
+        position: absolute;
+        content: '';
+        top: 3px;
+        left: 3px;
+        width: 12px;
+        height: 12px;
+        border-radius: 2px;
+        background-color: #a1d63e;
+        visibility: hidden;
+      }
+
+      &:checked:after{
+        visibility:visible;
+      }
+    }
+
+    input[type=submit]{
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      background-color: #a1d63e;
+      border-radius: 5px;
+      color: #fff;
+      border: none;
     }
   }
 }
