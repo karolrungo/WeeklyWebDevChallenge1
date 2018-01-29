@@ -21,6 +21,7 @@ header{
 
   img{
     filter: opacity(0.45);
+    max-width: 100%;
   }
 }
 
@@ -41,7 +42,6 @@ header{
 }
 
 .form-wrapper{
-  max-width: 420px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.23);
   border-radius: 5px;
