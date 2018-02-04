@@ -73,6 +73,7 @@ input[list] {
 
 input[type="checkbox"] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   display: inline-block;
   height: 20px;
   width: 20px;
@@ -100,14 +101,15 @@ textarea {
   height: 15em; }
 
 input[type=submit] {
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 25px;
   text-align: center;
   background-color: #a1d63e;
   border-radius: 5px;
   color: #fff;
   border: none; }
+
+.remember-me-wrapper {
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */
