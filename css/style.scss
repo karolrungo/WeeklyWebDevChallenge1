@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-  margin-top: 55px;
+  margin: 55px auto;
 }
 
 header{
@@ -139,14 +139,21 @@ header{
       border-radius: 5px;
       color: #fff;
       border: none;
+
+      &.red{
+        background-color: #f4495b;
+      }
     }
 
-.remember-me-wrapper,
-.buttons-wrapper{
+.flex-row{
   display: flex;
   justify-content: space-between
 }
 
 .disabled{
   filter: opacity(0.5)
+}
+
+.footer-logo{
+  margin-top: 50px;
 }
