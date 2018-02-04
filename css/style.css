@@ -71,6 +71,9 @@ input[type="email"] {
 input[list] {
   background: url("../img/icon-location.png") no-repeat 7px; }
 
+input[type='tel'] {
+  background: url("../img/icon-phone.png") no-repeat 7px; }
+
 input[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -101,15 +104,19 @@ textarea {
   height: 15em; }
 
 input[type=submit] {
-  padding: 10px 25px;
+  padding: 10px 35px;
   text-align: center;
   background-color: #a1d63e;
   border-radius: 5px;
   color: #fff;
   border: none; }
 
-.remember-me-wrapper {
+.remember-me-wrapper,
+.buttons-wrapper {
   display: flex;
   justify-content: space-between; }
+
+.disabled {
+  filter: opacity(0.5); }
 
 /*# sourceMappingURL=style.css.map */
